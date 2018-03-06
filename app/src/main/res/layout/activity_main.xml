@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ex.admin.taskkrfinal.MainActivity">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/idLog"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:hint="код" />
+
+        <EditText
+            android:id="@+id/idPass"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:hint="пароль" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickLogin"
+            android:text="login" />
+
+        <Button
+
+            android:id="@+id/idButCheck"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickCheck"
+            android:text="check" />
+    </LinearLayout>
+
+</RelativeLayout>
